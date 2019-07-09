@@ -1,4 +1,6 @@
 # vue-starter
+Vuex, Vue-router, ESLint, SCSS, CSS
+
 
 ## Project setup
 ```
