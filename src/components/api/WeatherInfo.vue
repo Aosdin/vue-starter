@@ -1,7 +1,8 @@
 <template>
   <div>
     <h3>Weather Info</h3>
-    <p>API KEY :
+    <p>
+      API KEY :
       <input
         v-model="iptAPIKey"
         type="text"
