@@ -6,6 +6,7 @@
       <input
         v-model="iptAPIKey"
         type="text"
+        placeholder="Openweather API Key"
       >
     </p>
     {{ weaher }}
@@ -19,7 +20,7 @@ export default {
   name: 'WeatherInfo',
   data () {
     return {
-      iptAPIKey: '1e5e3d5c9c01d394508a72c8fa1ed9de'
+      iptAPIKey: ''
     }
   },
   computed: {
