@@ -19,5 +19,9 @@ export default {
         commit(t.GET_WEATHER_FAIL)
         throw err
       })
+  },
+  setNavigation ({ commit }, payload) {
+    console.log(payload)
+    commit(t.SET_NAVIGATION, payload)
   }
 }

@@ -3,8 +3,7 @@ import getters from './getters'
 import mutations from './mutations'
 
 const state = {
-  isAPILoading: false,
-  weather: null
+  isNavigation: false
 }
 
 export default {

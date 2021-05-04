@@ -1,1 +1,18 @@
 //scss
+.full-base {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 0.25s ease-in-out;
+  nav {
+    position: absolute;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    width: 250px;
+    background: #ccc;
+  }
+  &.active {
+    left: 250px;
+  }
+}

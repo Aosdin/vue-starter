@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import FullBase from '@/container/FullBase'
 // modules
 import api from './api'
 
@@ -18,8 +19,17 @@ const router = new VueRouter({
   linkActiveClass: 'active',
   mode: 'history',
   routes: [
-    api,
-    { path: '/', name: 'main', component: Main }
+    {
+      path: '/',
+      component: FullBase,
+      children: [
+        {
+          path: '/',
+          name: 'main',
+          component: Main
+        }
+      ]
+    }
   ]
 })
 
